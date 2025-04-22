@@ -1,4 +1,4 @@
-# shell
+# bash
 [![Pub](https://img.shields.io/pub/v/bash.svg)](https://pub.dartlang.org/packages/bash)
 
 Wrapper over `dart:io` [Process] API's that supports features like environment management, user switches, and more.
