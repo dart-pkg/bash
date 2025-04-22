@@ -1,6 +1,6 @@
 name: "bash"
 description: "bash project"
-version: "2025.422.1418"
+version: "2025.422.1439"
 homepage: null
 repository: "https://github.com/dart-pkg/bash"
 environment:
