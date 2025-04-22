@@ -1,12 +1,3 @@
-# shell
-[![Pub](https://img.shields.io/pub/v/bash.svg)](https://pub.dartlang.org/packages/bash)
-
-Wrapper over `dart:io` [Process] API's that supports features like environment management, user switches, and more.
-
-Useful for writing shell utility scripts in Dart, or within applications that perform system administration
-tasks on behalf of other users.
-
-```dart
 import 'package:bash/bash.dart';
 import 'package:file/local.dart';
 
@@ -56,4 +47,3 @@ main() async {
   );
   print(find3);
 }
-```

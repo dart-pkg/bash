@@ -1,0 +1,14 @@
+name: "bash"
+description: "bash project"
+version: "2025.422.1418"
+homepage: null
+repository: "https://github.com/dart-pkg/bash"
+environment:
+  sdk: "^3.7.2"
+dependencies:
+  file: ^7.0.1
+  path: ^1.9.1
+  process: ^5.0.3
+dev_dependencies:
+  test: ^1.25.15
+  lints: ^5.1.1
