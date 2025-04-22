@@ -31,7 +31,7 @@ class Bash {
     this.processManager = const LocalProcessManager(),
     this.includeParentEnvironment = true,
     this.workingDirectory,
-    this.runInShell = true,
+    this.runInShell = false,
     Map<String, String> environment = const {},
   }) {
     this.environment.addAll(environment);

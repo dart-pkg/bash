@@ -1,6 +1,6 @@
 name: "bash"
-description: Wrapper over `dart:io` [Process] API's that supports additional features.
-version: "2025.422.1439"
+description: "Wrapper over `dart:io` [Process] API's that supports additional features."
+version: "2025.422.1519"
 homepage: null
 repository: "https://github.com/dart-pkg/bash"
 environment:
