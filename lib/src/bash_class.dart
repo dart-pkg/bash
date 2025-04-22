@@ -1,23 +1,24 @@
 import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
+import 'package:misc/misc.dart' as misc;
 import 'package:path/path.dart' as p;
 import 'package:process/process.dart';
 import 'wrapped_process.dart';
 
-String _makeBashCommand(List<String> commandList) {
-  String command = commandList[0];
-  for (int i = 1; i < commandList.length; i++) {
-    String arg = commandList[i];
-    if (!(arg.startsWith('"') || arg.startsWith("'")) &&
-        (commandList[i].contains(' ') || commandList[i].contains(r'\'))) {
-      command += ' "${commandList[i]}"';
-    } else {
-      command += ' ${commandList[i]}';
-    }
-  }
-  return command;
-}
+// String _makeBashCommand(List<String> commandList) {
+//   String command = commandList[0];
+//   for (int i = 1; i < commandList.length; i++) {
+//     String arg = commandList[i];
+//     if (!(arg.startsWith('"') || arg.startsWith("'")) &&
+//         (commandList[i].contains(' ') || commandList[i].contains(r'\'))) {
+//       command += ' "${commandList[i]}"';
+//     } else {
+//       command += ' ${commandList[i]}';
+//     }
+//   }
+//   return command;
+// }
 
 /// Wrapper over `package:process` [Process] API's that supports features like environment management, user switches, and more.
 class Bash {
@@ -66,7 +67,7 @@ class Bash {
   }
 
   Future<ProcessResult> run$(List<String> command) {
-    return run(_makeBashCommand(command));
+    return run(misc.makeCommandLine(command));
   }
 
   Future<WrappedProcess> start(String command) async {
@@ -83,7 +84,7 @@ class Bash {
   }
 
   Future<WrappedProcess> start$(List<String> commandList) async {
-    return start(_makeBashCommand(commandList));
+    return start(misc.makeCommandLine(commandList));
   }
 
   Future<String> runAsString(
@@ -101,6 +102,6 @@ class Bash {
     Encoding encoding = utf8,
     List<int> acceptedExitCodes = const [0],
   }) async {
-    return runAsString(_makeBashCommand(commandList));
+    return runAsString(misc.makeCommandLine(commandList));
   }
 }
