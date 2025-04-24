@@ -15,3 +15,7 @@
 ## 2025.422.1758
 
 - Introduced mics project dependencies
+
+## 2025.424.1846
+
+- Removed dependency to misc package
