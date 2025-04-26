@@ -19,3 +19,31 @@
 ## 2025.424.1846
 
 - Removed dependency to misc package
+
+## 2025.426.2233
+
+- Added example/example.md
+
+```
+--- a/pubspec.yaml
++++ b/pubspec.yaml
+-name: "bash"
+-description: "Wrapper over `dart:io` [Process] API's that supports additional features."
+-version: 2025.424.1846
+-homepage: null
++name: bash
++description: Wrapper over `dart:io` [Process] API's that supports additional features.
++version: 2025.426.2233
++homepage:
+-  sdk: "^3.7.2"
++  sdk: ^3.7.2
++platforms:
++  android:
++  ios:
++  linux:
++  macos:
++  #web:
++  windows:
+-  std: ^2025.424.1835
++  std: ^2025.426.1637
+```

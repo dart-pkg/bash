@@ -64,11 +64,11 @@ main() {
       );
       print(find3);
 
-      String ls = await shell.runAsString$(
-        ['ls', '-l', r'"D:\home11\pub\bash"'],
-        acceptedExitCodes: [0],
-      );
-      print(ls);
+      // String ls = await shell.runAsString$(
+      //   ['ls', '-l', r'"D:\home11\pub\bash"'],
+      //   acceptedExitCodes: [0],
+      // );
+      // print(ls);
     });
   });
 }
