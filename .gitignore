@@ -30,4 +30,8 @@ migrate_working_dir/
 .flutter-plugins-dependencies
 build/
 
+# By JavaCommons Technologiies
 *.txt
+!/bin
+!/lib
+!/test
