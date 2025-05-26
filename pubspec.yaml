@@ -1,6 +1,6 @@
 name: bash
 description: Wrapper over `dart:io` [Process] API's that supports additional features.
-version: 2025.513.439
+version: 2025.526.1907
 homepage: 
 repository: https://github.com/dart-pkg/bash
 environment:
@@ -15,8 +15,8 @@ platforms:
 dependencies:
   file: ^7.0.1
   path: ^1.9.1
-  process: ^5.0.3
-  std: ^2025.504.1244
+  process: ^5.0.4
+  std: ^2025.526.1751
 dev_dependencies:
-  test: ^1.25.15
-  lints: ^5.1.1
+  test: ^1.26.2
+  lints: ^6.0.0

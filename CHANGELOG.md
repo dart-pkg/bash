@@ -125,3 +125,22 @@
 -  std: ^2025.502.2358
 +  std: ^2025.504.1244
 ```
+
+## 2025.526.1907
+
+- Update dependencies
+
+```
+--- a/pubspec.yaml
++++ b/pubspec.yaml
+-version: 2025.513.439
++version: 2025.526.1907
+-  process: ^5.0.3
+-  std: ^2025.504.1244
++  process: ^5.0.4
++  std: ^2025.526.1751
+-  test: ^1.25.15
+-  lints: ^5.1.1
++  test: ^1.26.2
++  lints: ^6.0.0
+```

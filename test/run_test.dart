@@ -2,7 +2,7 @@ import 'package:test/test.dart';
 import 'package:bash/bash.dart';
 import 'package:file/local.dart';
 
-main() {
+void main() {
   group('Run', () {
     test('run1', () async {
       var fs = const LocalFileSystem();

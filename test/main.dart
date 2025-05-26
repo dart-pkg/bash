@@ -1,7 +1,7 @@
 import 'package:bash/bash.dart';
 import 'package:file/local.dart';
 
-main() async {
+Future<void> main() async {
   var fs = const LocalFileSystem();
   var shell = Bash();
 
